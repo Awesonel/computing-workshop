@@ -1,4 +1,4 @@
-package ru.awesone.task1;
+package ru.awesone.lssolver;
 
 import java.util.ArrayList;
 import java.util.Arrays;
