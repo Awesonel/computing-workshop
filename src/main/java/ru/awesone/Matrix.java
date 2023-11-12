@@ -1,9 +1,10 @@
-package ru.awesone.lssolver;
+package ru.awesone;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
+import ru.awesone.lssolver.LinearSystemSolver;
 
 /**
  * Класс матрицы для первого задания.
@@ -145,6 +146,18 @@ public class Matrix {
 
   public double[][] getMatrixArray() {
     return matrixArray;
+  }
+
+  public double getMatrixNorm() {
+    double result = 0;
+
+    for (int i = 0; i < matrixArray.length; i++) {
+      for (int j = 0; j < matrixArray[0].length; j++) {
+        result += matrixArray[i][j] * matrixArray[i][j];
+      }
+    }
+
+    return Math.sqrt(result);
   }
 
   @Override

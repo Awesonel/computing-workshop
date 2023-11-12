@@ -4,17 +4,18 @@ import dnl.utils.text.table.TextTable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
+import ru.awesone.Matrix;
 
 public class LinearSystemSolverApp {
 
   public static final Matrix MATRIX = new Matrix(new double[][]{
-      {0.00000012951443, 1.554567, -3.998582},
-      {1.554567, 9.835076, 0.930339},
-      {-3.998582, 0.930339, 7.80380}});
+      {1, 2, 3},
+      {4, 8, 1},
+      {2, 3, 5}});
   public static final List<Double> VECTOR = Arrays.asList(
-      4.03171,
-      11.5427,
-      6.73485);
+      17.0,
+      24.0,
+      28.0);
 
   public static void main(String[] args) {
     testGaussianSchemeSingularDivision();

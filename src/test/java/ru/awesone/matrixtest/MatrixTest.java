@@ -1,12 +1,13 @@
-package ru.awesone.lssolver;
+package ru.awesone.matrixtest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import ru.awesone.Matrix;
 
-class LinearSystemSolverTest {
+class MatrixTest {
 
   @Test
   void testExpandedMatrix() {
